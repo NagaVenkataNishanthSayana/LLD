@@ -50,7 +50,7 @@ public class ElevatorCar {
     public boolean moveElevator(ElevatorDirection direction,int destinationFloor){
         int startFloor=currentFloor;
         if(direction==ElevatorDirection.UP){
-            for(int i=startFloor+1;i<=destinationFloor;i++){
+            for(int i=startFloor;i<=destinationFloor;i++){
                 this.currentFloor=i;
                 setElevatorDisplay();
                 showDisplay();
